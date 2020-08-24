@@ -1,7 +1,8 @@
-
-
-
 ## Resources
+
+### API
+
+[coronavirus-19-api.herokuapp.com/countries](https://coronavirus-19-api.herokuapp.com/countries)
 
 ### Steps
 
@@ -44,13 +45,36 @@ $ npm i -D react-app-rewired
   },
 ```
 
-```sh
-$ 
+`public/manifest.json`
+
+```js
+"short_name": "Covid-19",
+"name": "Covid-19 app PWA",
+```
+
+`public/worker.js`
+
+```js
+var CACHE_NAME = 'covid19-pwa';
+var urlsToCache = [
+  '/'
+];
+...
+```
+
+`src/index.js`
+
+```js
+serviceWorker.register();
 ```
 
 ```sh
-$ 
+$
 ```
+
+## Credits
+
+[Tautorn/covid19-dio](https://github.com/Tautorn/covid19-dio)
 
 ## TODO
 
@@ -60,10 +84,7 @@ $
 "start": "react-app-rewired start",
 ```
 
-
-
-
-
+## Bla bla
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

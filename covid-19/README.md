@@ -45,6 +45,8 @@ $ npm i -D react-app-rewired
   },
 ```
 
+#### PWA
+
 `public/manifest.json`
 
 ```js
@@ -68,8 +70,11 @@ var urlsToCache = [
 serviceWorker.register();
 ```
 
+[Lighthouse](https://github.com/GoogleChrome/lighthouse#using-the-node-cli) analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.
+
 ```sh
-$
+$ npm install -g lighthouse
+$ lighthouse http://localhost:3000/
 ```
 
 ## Credits
